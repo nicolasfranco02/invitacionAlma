@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Asistencia</title>
+    <link href="https://fonts.cdnfonts.com/css/waltograph" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="titulo">
+            <p> Alma </p>
+            <p> 15 Años</p>
+        </div>
+
+        <div class="primero">
+
+            <p class="introduccion">
+                existen momentos en la vida
+                que imaginamos.
+                uno de esos momentos ha llegado
+                y deseo compartirlo con las personas
+                que han estado para mi y mis padres,
+                tu eres una de ella
+
+            </p>
+        </div>
+
+        <div>
+            <div class="titulo">Lugar y Fecha</div>
+            <div class="introduccion">
+                <ul class="informacion">
+                    <li> Fecha: 15/11/24 </li>
+                      <li>  horario: 21 hs </li>
+                       <li> direccion: <a
+                            href="https://www.google.com.ar/maps/place/Av.+Pte.+J.+D.+Per%C3%B3n+2023,+B1663+San+Miguel,+Provincia+de+Buenos+Aires/@-34.5385804,-58.7200672,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcbd6b81ab8395:0x55b8f0139f878f90!8m2!3d-34.5385804!4d-58.7174923!16s%2Fg%2F11hlbb0k3w?entry=ttu"
+                            target="_blank"> pte peron 2023- san miguel</a> </li>
+                       <li> veni como te sientas comodo
+                        (sin camisetas de futbol, ni short)
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+<div class="titulo">¡Estás Invitado!</div>
+        <div class="botones">
+          <button id="asistireBtn" >Confirmar Asistencia</button>
+                <button id="noasistireBtn">No asistire</button></div>
+
+
+
+               <div id="formulario">
+             <form >
+                <input type="text" id="nombre" placeholder="Tu Nombre" required>
+                <input type="text" id="cancion" name="cancion" placeholder="Cancion que quieras escuchar" required>
+                <input type="text" id="impedimentos" name="impedimentos" placeholder="impedimentos alimenticios" >
+                <button type="submit" id="confirmarAsistenciaBtn">enviar</button>
+              </form>   
+           </div>  
+           <div id="formulario2">
+            <form >
+               <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
+               <input type="text" id="msj" name="msj" placeholder="algun mensajito que me quieras decir" >
+               <button type="submit" id="noconfirmarAsistenciaBtn">enviar</button>
+             </form>   
+          </div>  
+
+           
+            
+        
+<div class="contador">
+    <div class="titulo">falta </div>
+    <div id="countdown">
+        <div>
+          <span id="days"></span>
+          <div class="smalltext">Días</div>
+        </div>
+        <div>
+          <span id="hours"></span>
+          <div class="smalltext">Horas</div>
+        </div>
+        <div>
+          <span id="minutes"></span>
+          <div class="smalltext">Minutos</div>
+        </div>
+        <div>
+          <span id="seconds"></span>
+          <div class="smalltext">Segundos</div>
+        </div>
+
+</div>
+
+    </div></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

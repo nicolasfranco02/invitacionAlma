@@ -40,7 +40,7 @@ document.getElementById('asistireBtn').addEventListener('click', function() {
     let name = document.getElementById('name').value;
     let numeroTelefono = '+5491130637045'; // Reemplaza con tu número de teléfono
     let msj= document.getElementById('msj').value;
-    let mensaje = 'Hola, soy ' + name + ' y confirmo mi asistencia al evento. me gustaria escuchar ' + msj + ' ';
+    let mensaje = 'Hola, soy ' + name + ' y no voy a poder asistir al evento. ' + msj + ' ';
     let url = 'https://api.whatsapp.com/send?phone=' + numeroTelefono + '&text=' + encodeURIComponent(mensaje);
     window.open(url, '_blank');
   });

@@ -1,12 +1,5 @@
- /*document.getElementById('rsvp-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
 
-    const mailtoLink = `mailto:gabrielfranco4321@gmail.com?subject=Confirmación de Asistencia&body=Nombre: ${name}%0ACorreo: ${email}`;
-    window.location.href = mailtoLink;
-});*/
-// evento botn
+// evento boton
 document.getElementById('asistireBtn').addEventListener('click', function() {
     var formulario = document.getElementById('formulario');
     if (formulario.style.display === 'none') {
@@ -27,7 +20,7 @@ document.getElementById('asistireBtn').addEventListener('click', function() {
 // envio mensaje
   document.getElementById('confirmarAsistenciaBtn').addEventListener('click', function() {
     let nombre = document.getElementById('nombre').value;
-    let numeroTelefono = '1130637045'; // Reemplaza con tu número de teléfono
+    let numeroTelefono = '+5491134999932'; // Reemplaza con tu número de teléfono
     let cancion= document.getElementById('cancion').value;
     let impedimentos = document.getElementById('impedimentos').value;
     let mensaje = 'Hola, soy ' + nombre + ' y confirmo mi asistencia al evento. me gustaria escuchar ' + cancion +  
@@ -38,7 +31,7 @@ document.getElementById('asistireBtn').addEventListener('click', function() {
   
   document.getElementById('noconfirmarAsistenciaBtn').addEventListener('click', function() {
     let name = document.getElementById('name').value;
-    let numeroTelefono = '1130637045'; // Reemplaza con tu número de teléfono
+    let numeroTelefono = '+5491134999932'; // Reemplaza con tu número de teléfono
     let msj= document.getElementById('msj').value;
     let mensaje = 'Hola, soy ' + name + ' y no podre ir. pero ' + msj + ' ';
     let url = 'https://api.whatsapp.com/send?phone=' + numeroTelefono + '&text=' + encodeURIComponent(mensaje);
